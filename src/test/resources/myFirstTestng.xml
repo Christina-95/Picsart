@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Picsart" verbose="1">
+	<test name="Picsart Tests">
+		<classes>
+			<!--<class name="com.picsart.signup.SignUpTest">
+				<methods>
+					<include name="registerWithExistingParametres" />
+					<include name="registerInvalidEmail" />
+					<include name="registerEmptyPassword" />
+					<include name="registerWithExistingParametres" />
+					<include name="registerWithShortPassword" />
+					<include name="registerWithEmptyFields" />
+					<include name="registerWithEmptyEmail" />
+					<include name="registerWithLongPassword" />
+				</methods>
+			</class>-->
+			<!--  <class name="com.picsart.signin.LogInTest">
+				<methods>
+					<include name="" />
+				</methods>
+			</class> -->
+			<class name="com.picsart.homepage.header.BrowseLinksTest">
+				<methods>
+					<!--  <include name="animeLinkValidation" />
+					<include name="editingLinkValidation"/>
+					<include name="fashionLinkValidation"/>
+					<include name="flowersLinkValidation"/>
+					<include name="photographyLinkValidation"/>
+					<include name="natureLinkValidation"/>
+					<include name="allImagesLinkValidation"/>-->
+					<include name="allAnimeStickersLinkValidation"/>
+					<include name="celebritiesLinkValidation"/>
+					<include name="colorsLinkValidation"/>
+					<include name="emojiLinkValidation"/>
+					<include name="memeLinkValidation"/>
+					<include name="loveLinkValidation"/>
+					<include name="allStickersLinkValidation"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
