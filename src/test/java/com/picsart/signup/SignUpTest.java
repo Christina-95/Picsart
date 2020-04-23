@@ -12,8 +12,8 @@ import com.picsart.pages.signup.SignUpPage;
 
 public class SignUpTest extends BaseTest {
 	
-	public String correctEmail="kristina066k@gmail.com";
-	public String correctPassword = "k066kkkk";
+	public String correctEmail="correct@gmail.com";
+	public String correctPassword = "kkk";
 	public static final int random = ThreadLocalRandom.current().nextInt(1000, 90000);
 
 	@Test  (priority=0)
@@ -212,7 +212,7 @@ public class SignUpTest extends BaseTest {
 		// wait for Sign Up page to be opened
 		signPage.waitForSignUpPageToBeOpened();
 		// Step 4:Enter valid email address in "Email"field
-		signPage.emailSendKeys("kristina066k@gmail.com");
+		signPage.emailSendKeys("xx@gmail.com");
 		// Step 5:Enter more than 20 character password
 		signPage.passwordSendKeys("fhy654sepo098ihkg67cf");
 		// Step 6:Click on "Sign up" button
