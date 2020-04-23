@@ -34,9 +34,9 @@ public class LogInTest extends BaseTest {
 		// Step 5:Validate that Sign in page is displayed
 		Assert.assertTrue(signInPage.validateSignInPageIsDisplayed());
 		// Step 6:Enter registered email address in "Email" field
-		signInPage.userNameSendKeys("kristina066k@gmail.com");
+		signInPage.userNameSendKeys("XXX@gmail.com");
 		// Step 7:Enter registered password in "Password" field
-		signInPage.passwordSendKeys("k066kkkk");
+		signInPage.passwordSendKeys("bhbjkk");
 		// Step 8:Click on "Sign up" button
 		signInPage.clickOnSignInBtn();
 		// wait for Registered user page to be opened
@@ -64,7 +64,7 @@ public class LogInTest extends BaseTest {
 		// wait for "Sign in" page to be displayed
 		signInPage.waitForSignInPage();
 		// Step 5:Enter registered email address in "Email" field
-		signInPage.userNameSendKeys("kristina066k@gmail.com");
+		signInPage.userNameSendKeys("XXX@gmail.com");
 		// Step 6:Enter incorrect password in "Password" field
 		signInPage.passwordSendKeys("hkjjhlk789865");
 		// Step 7:Click on "Sign up" button
@@ -90,7 +90,7 @@ public class LogInTest extends BaseTest {
 		//wait for Sign In Page to be displayed
 		signInPage.waitForSignInPage();
 		//Step 5:Enter incorrect email address in "Email" field
-		signInPage.userNameSendKeys("kris"+random+"@gmail.com");
+		signInPage.userNameSendKeys("xxx"+random+"@gmail.com");
 		//Step 6:Enter random password in "Password" field
 		signInPage.passwordSendKeys("" + random);
 		//Step 7:Click on "Sign in" button
@@ -115,7 +115,7 @@ public class LogInTest extends BaseTest {
 		//wait for Sign In page to be displayed
 		signInPage.waitForSignInPage();
 		//Step 5:Enter valid email addresss in "Email" field
-		signInPage.userNameSendKeys("kristina066k@gmail.com");
+		signInPage.userNameSendKeys("xxx@gmail.com");
 		//Step 6:Leave password field blank
 		signInPage.passwordSendKeys("");
 		//Step 7:Click on "Sign in" button 
