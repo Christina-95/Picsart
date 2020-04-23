@@ -37,7 +37,7 @@ public class TestCase {
 		email.click();
 		WebElement password = driver.findElement(By.xpath("//input[@id=\"password\"]"));
 		password.click();
-		email.sendKeys("tinat6043@gmail.com");
+		email.sendKeys("XXX@gmail.com");
 		password.sendKeys("");
 		driver.findElement(By.xpath("//div[@class=\"js-sign-in-up primary-big-btn submit\"]")).click();
 		Thread.sleep(2000);
@@ -152,8 +152,8 @@ public class TestCase {
 		email.click();
 		WebElement password = driver.findElement(By.xpath("//input[@id=\"password\"]"));
 		password.click();
-		email.sendKeys("tinat6043@gmail.com");
-		password.sendKeys("12345678");
+		email.sendKeys("XXX@gmail.com");
+		password.sendKeys(random);
 		driver.findElement(By.xpath("//div[@type=\"submit\"]")).click();
 		Thread.sleep(3000);
 		WebElement actual2 = driver.findElement(By.xpath("//span[@class=\"c-ga-click circle-border\"]/*"));
@@ -189,8 +189,8 @@ public class TestCase {
 		email.click();
 		WebElement password = driver.findElement(By.xpath("//input[@id=\"password\"]"));
 		password.click();
-		email.sendKeys("tinat6043@gmail.com");
-		password.sendKeys("ryty6768");
+		email.sendKeys("XXX@gmail.com");
+		password.sendKeys(random);
 		driver.findElement(By.xpath("//div[@type=\"submit\"]")).click();
 		Thread.sleep(3000);
 		WebElement actual = driver.findElement(By.xpath("//span[@class=\"js-error error\"]/../span[3]"));
@@ -228,8 +228,8 @@ public class TestCase {
 		email.click();
 		WebElement password = driver.findElement(By.xpath("//input[@id=\"password\"]"));
 		password.click();
-		email.sendKeys("tinat6043@gmail.com");
-		password.sendKeys("12345678");
+		email.sendKeys("XXX@gmail.com");
+		password.sendKeys("jkhkh");
 		driver.findElement(By.xpath("//div[@type=\"submit\"]")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[@class=\"c-ga-click circle-border\"]/*")).click();
@@ -384,7 +384,7 @@ public class TestCase {
 		WebDriver driver = new ChromeDriver();
 		driver.get(picsartUrl);
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//a[@href=\"/gold\"]")).click();
+		driver.findElement(By.xpath("//a[@href='/gold']")).click();
 		String gold = driver.getCurrentUrl();
 		Thread.sleep(2000);
 		Assert.assertNotEquals(gold, picsartUrl);
